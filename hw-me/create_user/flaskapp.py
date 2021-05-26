@@ -9,12 +9,12 @@ app = Flask(__name__)
 data = {"key":"this is default"}
 
 #database part
-myclient = pymongo.MongoClient("mongodb://192.168.32.129:27017/")
+myclient = pymongo.MongoClient("mongodb://10.128.0.5:27017/")
 mydb = myclient["mydatabase"]
 mycol = mydb["key"]
 
 
-@app.route('/posthelloworld',methods=['GET','POST'])
+@app.route('/',methods=['GET','POST'])
 def entry_point():
     data = request.get_json() #this part is fect the value from the body
     result = publisher.publisher(data['key'])

@@ -2,7 +2,7 @@ import sys
 import pika
 
 def publisher(message):
-    connection=pika.BlockingConnection(pika.ConnectionParameters(host='192.168.32.129'))
+    connection=pika.BlockingConnection(pika.ConnectionParameters(host='10.128.0.5'))
     channel = connection.channel()
     channel.queue_declare(queue='task_queue', durable=True)
     
