@@ -1,5 +1,5 @@
 # Cloud-Service
-### Docker-Build:
+### Docker-Compose Build:
 ```sh
 $ cd /hw-me
 $ docker-compose build
