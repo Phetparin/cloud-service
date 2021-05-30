@@ -1,7 +1,9 @@
 # Cloud-Service
 ### Docker-Build:
+```sh
 $ cd /hw-me
 $ docker-compose build
+```
 
 ### Start service:
 ```sh
