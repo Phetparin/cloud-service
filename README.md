@@ -33,7 +33,7 @@ $ docker-compose migrate-to-labels
 
 ### Docker-Compose Build:
 ```sh
-$ cd /hw-me
+$ cd /hw-me #into location file
 $ docker-compose build
 ```
 
